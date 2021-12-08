@@ -290,7 +290,7 @@
                             <img src="img/calculator.svg" alt="" srcset="">
 
                         </div>
-                        <div> <span>Simuilation Accidents</span></div>
+                        <div> <span>Simulation Accidents</span></div>
 
                     </div>
                 </div>
@@ -386,7 +386,7 @@
                                 </div>
 
                                 <div class="form-group col-md-12 data__field">
-                                    <label for="autoModele">Date de naissance<span class="text-danger">*</span>
+                                    <label for="autoModele">Date de naissance (i)<span class="text-danger">*</span>
                                         :</label>
                                     <input type="date" class="form-control form-rounded" id="autoModele"
                                         placeholder="Frank">
@@ -395,7 +395,9 @@
                                 <div class="col-md-12 d-flex questions__nav">
                                     <input type="button" class="last" value="Retour">
                                     <input type="button" class="next" value="Suivant">
+                                    
                                 </div>
+
 
                             </div>
 
@@ -491,6 +493,93 @@
                             </div>
 
                             <div class="c4-placeholder hide"></div>
+                            <div class="form-row row hide">
+
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele"> {firstName}, NSIA Assurances vous propose sa meilleure offre pour répondre à votre besoin.<span
+                                            class="text-danger">*</span>
+                                        :</label>
+                                        <br>
+
+                                        <div class="pricingTable" style="width: 160%;">
+    
+                                            <ul class="pricingTable-firstTable">
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong> Formule 1 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                 
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 2 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                      
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 3 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                      
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 4</strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                    
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+    
+                                            </ul>
+                                        </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="col-md-12 d-flex questions__nav c17">
+                                    <input type="button" class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
+
+                            </div>
 
 
 
@@ -1654,7 +1743,7 @@
 
 
 
-<div class="col-md-12 d-flex questions__nav c17">
+<div class="col-md-12 d-flex questions__nav ">
     <input type="button" class="last" value="Retour">
     <input type="button" class="next" value="Suivant">
 </div>
@@ -1690,7 +1779,7 @@
 
 
 
-<div class="col-md-12 d-flex questions__nav c17">
+<div class="col-md-12 d-flex questions__nav ">
     <input type="button" class="last" value="Retour">
     <input type="button" class="next" value="Suivant">
 </div>
@@ -1772,7 +1861,7 @@
             //     }
 
             // } else
-             if ($(this).parents('.last-subs').length > 0 || $(this).parents('.c17').length > 0) {
+             if ($(this).parents('.last-subs').length > 0 || $(this).parent().hasClass('c17')) {
                 currentStep = $(".md-step.active.done")
                 nextStep = currentStep.next()
                 nextStep.addClass("active")
