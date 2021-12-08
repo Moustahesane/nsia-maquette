@@ -612,6 +612,12 @@ span.counter-icon {
     top: 480px!important;
 }
 
+.sub-list-item {
+    width: 105%;
+    padding-left: 18px;
+}
+
+
 .counter-area {
     position: relative;
     overflow: hidden;
