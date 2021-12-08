@@ -1,0 +1,119 @@
+body {
+    font-family: arial;
+}
+
+.corp-sec span {
+    padding: 0 10px;
+}
+
+.corp-sec {
+    color: #00355d;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.navbar-div {
+    border-top-left-radius: 43px;
+    background-color: #000061;
+    min-height: 111px;
+    max-height: 111px;
+}
+
+.spac-elm-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding-top: 3px;
+}
+
+.mbMinus10 {
+    margin-bottom: -10px;
+}
+
+.mtMinus10 {
+    margin-top: -10px;
+}
+
+.elm-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.mrl-auto {
+    margin: 0 33px;
+}
+
+.ml-10v {
+    margin-left: 10vw;
+}
+
+#esp-txt {
+    color: inherit;
+    width: 10vw;
+    margin-left: 10px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.specli {
+    height: 105px;
+    position: absolute;
+    right: 10px;
+    margin-right: -10px;
+}
+
+.lang-show {
+    position: relative;
+    inset: -10px auto auto 0px;
+    margin: 0px;
+    z-index: 99999;
+    /* transform: translate(1278px, 36px); */
+    min-width: 110px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.tt {
+    margin-left: 0;
+}
+
+.lan {
+    margin-left: 10px;
+    text-align: start;
+}
+
+.header-right-link {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    float: right;
+    width: 210px;
+    height: 60px;
+    padding: 17px 7px;
+    margin-left: 0px;
+    text-align: right;
+    text-align: center;
+    background: #fbbf31;
+    cursor: pointer;
+    border-bottom-left-radius: 38px;
+    border-top-left-radius: 38px;
+}
+
+.corporate {
+    margin-right: 0vw;
+}

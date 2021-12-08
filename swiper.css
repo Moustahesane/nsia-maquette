@@ -1,0 +1,150 @@
+.product-slide-area {
+    padding: 100px 0 0 0;
+}
+
+.product-slide-area .right-squar {
+    width: 15px;
+    height: 120px;
+    position: absolute;
+    background: #FBBF31;
+    top: -15px;
+    right: -15px;
+    z-index: 1;
+}
+
+.product-slide-area .top-squar {
+    width: 120px;
+    height: 15px;
+    position: absolute;
+    background: #FBBF31;
+    top: -15px;
+    right: -15px;
+    z-index: 1;
+}
+
+.product-slide-area .carousel-indicat .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+}
+
+.product-slide-area .carousel-indicat li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#product-slider-items .product-slider-area .about-us-img {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#product-slider-items {
+    background-color: #F7F7F8;
+    padding: 15px 0px;
+}
+
+#product-slider-items .product-slider-area .about-us-img img {
+    min-height: 581px;
+    object-fit: cover;
+}
+
+#product-slider-items .product-slider-area .about-us-img img.rl {
+    border-radius: 0rem 0rem 0rem 13rem;
+}
+
+#product-slider-items .product-slider-area .about-us-img img.rr {
+    border-radius: 0rem 0rem 13rem 0rem;
+}
+
+#product-slider-items .product-slider-area .about-us-description {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 4rem;
+}
+
+#product-slider-items .product-slider-area .about-us-description .top-title {
+    color: #d1980e;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+    text-transform: uppercase;
+}
+
+#product-slider-items .product-slider-area .about-us-description .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+#product-slider-items .product-slider-area .about-us-description .text {
+    font-weight: 500;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 40px;
+}
+
+#product-slider-items .product-slider-area .about-us-description button {
+    background-color: #2f5bea;
+    color: #FFF;
+    border-color: #2f5bea;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+#product-slider-items .product-slider-area .center-card {
+    padding: 3rem;
+    display: block;
+    align-items: center;
+    background-color: #000061;
+    min-height: 50vh;
+    margin-bottom: 23vh;
+}
+
+.product-slide-area .carousel-indicat {
+    position: absolute;
+    /* bottom: 65px; */
+    /* left: 100%; */
+    z-index: 15;
+    /* width: 60%; */
+    /* margin-left: -30%; */
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    padding: 15px;
+    bottom: 90px;
+    right: 15%;
+}
+
+.product-slide-area .carousel-indicat li {
+    background: #D8D8D8;
+    border: 3px solid #D8D8D8;
+    width: 24px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.product-slide-area .carousel-indicat .active {
+    background: #CEAB56;
+    /* outline: 3px solid #ccc; */
+    -moz-outline-radius: 80%;
+    border: 3px solid #CEAB56;
+    box-shadow: 0 0px -3px #CEAB56;
+    /* width: 24px; */
+    width: 60px;
+    height: 15px;
+}

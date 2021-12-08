@@ -1,0 +1,360 @@
+#quizSection {
+  background: #f7f7f8;
+}
+
+#quizSection .logo {
+  font-size: 250px;
+  color: #FBBC05;
+}
+
+#quizSection h1 {
+  border-bottom: solid #FBBC05 2px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+#quizSection section {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0;
+  z-index: 99;
+  transition: all .75s ease-out;
+}
+
+#quizSection .question {
+  box-shadow: inset 0 0 0px 10px #F44336;
+}
+
+#quizSection .question h1 {
+  border-bottom: solid #F44336 2px;
+}
+
+#quizSection section.on {
+  top: 0%;
+  opacity: 1;
+}
+
+#quizSection h3 a {
+  color: #ffffff;
+}
+
+#quizSection h3 a:hover {
+  text-decoration: none;
+}
+
+#quizSection article {
+  position: relative;
+  margin: 50px auto 40px auto;
+  width: 50%;
+}
+
+#quizSection article img {
+  max-width: 100%;
+  min-width: 60%;
+  max-height: 350px;
+}
+
+#quizSection article video {
+  width: 100%;
+  max-height: 350px;
+}
+
+#quizSection li, #quizSection p {
+  font-size: 20px;
+  text-align: left;
+}
+
+#quizSection li {
+  margin: 30px 0;
+}
+
+#quizSection button:not(.victim-btn) {
+  padding: 10px 20px;
+  outline: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #FBBC05;
+  color: #FBBC05;
+  font-weight: bold;
+  margin: 0 8px;
+  transition: all .5s ease-out;
+}
+
+#quizSection .question button:not(.victim-btn) {
+  border-bottom: solid 2px #F44336;
+}
+
+#quizSection button:not(.victim-btn):hover {
+  color: #FBBC05;
+}
+
+#quizSection .question button:not(.victim-btn):hover {
+  color: #F44336;
+}
+
+#quizSection p {
+  line-height: 1.3;
+}
+
+#quizSection p span, #quizSection li span {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  margin: 3px 2px;
+  transform: rotate(-3deg);
+  border-bottom: solid 2px #FBBC05;
+}
+
+#quizSection .victim-name {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  top: -3000px;
+  text-align: center;
+  font-size: 100px;
+  color: #FBBC05;
+  z-index: 9999;
+  text-shadow: 0 0 40px #000000;
+  transition: all .3s ease-out;
+  background: rgba(0, 0, 0, .9);
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, .9);
+}
+
+#quizSection a {
+  color: #FBBC05;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#quizSection a:hover {
+  color: #FBBC05;
+}
+
+#quizSection .victim-name.show {
+  top: 33%;
+  opacity: 1;
+}
+
+#quizSection .victim-btn {
+  background: #F44336;
+  position: fixed;
+  margin: 20px;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  transition: all .3s ease-out;
+  outline: none;
+  z-index: 999999;
+}
+
+#quizSection .victim-btn:disabled, .victim-btn:disabled:hover {
+  background: #cdcdcd;
+}
+
+#quizSection .victim-btn:hover {
+  background: #B71C1C;
+}
+
+#quizSection .btnTest {
+  position: relative;
+  width: 80%;
+  margin: 80px auto;
+  padding: 20px;
+  color: #000000;
+  background: #cccccc;
+}
+
+#quizSection .btnTest p {
+  text-align: center;
+}
+
+#quizSection .btnTest span.rus {
+  display: block;
+  width: 98%;
+  margin: 5px 0%;
+  padding: 10px 0;
+  border: solid 2px #000000;
+}
+
+#quizSection .btnTest span {
+  display: inline-block;
+  width: 39%;
+  margin: 0 4.5%;
+  padding: 10px 0;
+  border: solid 2px #000000;
+  transition: all .2s ease-out;
+}
+
+#quizSection .btnTest span.red {
+  color: #E53935;
+  border: solid 2px #E53935;
+  background: #EF9A9A;
+}
+
+#quizSection .btnTest span.green {
+  color: #43A047;
+  border: solid 2px #43A047;
+  background: #A5D6A7;
+}
+
+#quizSection .btnTest span.red.hov:hover {
+  color: #ffffff;
+  background: #E53935;
+}
+
+#quizSection .btnTest span.green.hov:hover {
+  color: #ffffff;
+  background: #43A047;
+}
+
+#quizSection .btnTest span.red.hov:active, .btnTest span.green.hov:active {
+  transform: scale(.95);
+}
+
+#quizSection .topBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+#quizSection a.close-btn {
+  position: fixed;
+  top: 50px;
+  right: 81px;
+  font-size: 70px;
+}
+
+#quizSection a.close-btn:hover {
+  transform: rotate(180deg);
+  transition: all .2s ease-out;
+}
+
+#quizSection article {
+  position: relative;
+  margin: 41px;
+  width: 60%;
+}
+
+#quizSection .left-side {
+  padding: 100px 60px 0;
+  width: 100%;
+  height: 100vh;
+  background: #E6922E;
+  color: #3d5368;
+}
+
+#quizSection .left-side>* {
+  margin: 10px 10px;
+}
+
+#quizSection .left-side .main-icon {
+  font-size: 80px;
+}
+
+#quizSection .left-side h3 {
+  width: 253px;
+  font-size: 38px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+#quizSection .left-side p {
+  font-size: 14px;
+  color: #f7f7f8;
+  font-weight: 300;
+}
+
+.step-track {
+  margin-top: 2rem;
+  padding: 0 0;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-track-step {
+  display: flex;
+  height: 7rem;
+}
+
+.step-track-step:last-child {
+  overflow: hidden;
+  height: 4rem;
+}
+
+.step-track-step:last-child .step-track-status span:last-of-type {
+  display: none;
+}
+
+.step-track-status {
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.step-track-status.in .step-track-status-dot, .step-track-status.in .step-track-status-line, .step-track-status.done .step-track-status-dot, .step-track-status.done .step-track-status-line {
+  background: #3d5368;
+}
+
+.step-track-status.in + .step-track-text .step-track-text-stat, .step-track-status.done + .step-track-text .step-track-text-stat {
+
+
+  color: #3d5368 !important;
+  font-size: 14px !important;
+  font-weight: 500!important;
+
+}
+
+
+.step-track-status-dot {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #3d536891;
+}
+.in .step-track-status-dot i,
+.done .step-track-status-dot i {
+  text-align: center;
+  color: #E6922E;
+  padding: 0px 3px;
+  font-size: 17px;
+  visibility: visible!important;
+}
+.step-track-status-dot i{
+  visibility: hidden;
+}
+
+.step-track-status-line {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 7rem;
+  background: #3d536891;
+}
+
+.step-track-text-stat {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+  color: #3d536891!important;
+
+}
+
+.step-track-text-sub {
+  font-size: 1rem;
+  font-weight: 300;
+  color: transparent;
+}
+
+.step-track {
+  transition: all 0.3s height 0.3s;
+  transform-origin: top center;
+}

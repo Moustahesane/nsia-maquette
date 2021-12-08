@@ -1,0 +1,59 @@
+.control {
+    box-sizing: border-box;
+    clear: both;
+    font-size: 1rem;
+    position: relative;
+    text-align: inherit;
+}
+
+.select.is-medium {
+    font-size: 1.55rem;
+}
+
+.select:not(.is-multiple) {
+    height: 2.5em;
+}
+
+.select:not(.is-multiple) select {
+    width: 14em;
+    height: 3em;
+}
+
+.select {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    vertical-align: top;
+}
+
+.input,
+.textarea,
+.select select {
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    max-width: 100%;
+    outline: none;
+    background-color: white;
+    border-color: #dbdbdb;
+}
+
+.select select:not([multiple]) {
+    padding-right: 2.5em;
+}
+
+.select.is-rounded select {
+    border-radius: 9999px;
+    padding-left: 1em;
+}
+
+.button.is-rounded {
+    border-radius: 9999px;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
+    margin-top: 8px;
+}
+
+.button.is-medium {
+    font-size: 2.792rem;
+}

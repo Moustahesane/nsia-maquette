@@ -1,0 +1,100 @@
+#page .about-us-area .about-us-img {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#page {
+    background-color: #f5f4f4;
+}
+
+#page .about-us-area .about-us-img img {
+    min-height: 46rem;
+    object-fit: cover;
+}
+
+#page .about-us-area .about-us-img img.rl {
+    border-radius: 0rem 0rem 0rem 13rem;
+}
+
+#page .about-us-area .about-us-img img.rr {
+    border-radius: 0rem 0rem 13rem 0rem;
+}
+
+#page .about-us-area .about-us-description {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 4rem;
+}
+
+#page .about-us-area .about-us-description-spec {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2rem;
+}
+
+#page .about-us-area .about-us-description .top-title {
+    color: #d1980e;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#page .about-us-area .about-us-description-spec .top-title {
+    color: #d1980e;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+#page .about-us-area .about-us-description .title {
+    line-height: 40px;
+    font-size: 5rem;
+    color: #000;
+    font-weight: 700;
+}
+
+#page .about-us-area .about-us-description-spec .title {
+    line-height: 40px;
+    font-size: 5rem;
+    color: #000;
+    font-weight: 700;
+}
+
+#page .about-us-area .about-us-description .text {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#page .about-us-area .about-us-description-spec .text {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#page .about-us-area .about-us-description button {
+    background-color: #2f5bea;
+    color: #FFF;
+    border-color: #2f5bea;
+    text-transform: uppercase;
+}
+
+#page .about-us-area .about-us-description-spec button {
+    background-color: #2f5bea;
+    color: #FFF;
+    border-color: #2f5bea;
+    text-transform: uppercase;
+}
+
+#page .about-us-area .center-card-spec {
+    padding: 0 3rem;
+    display: block;
+    align-items: center;
+    background-color: #FFF;
+}
+
+#page .about-us-area .center-card {
+    padding: 3rem;
+    display: block;
+    align-items: center;
+    background-color: #FFF;
+}
