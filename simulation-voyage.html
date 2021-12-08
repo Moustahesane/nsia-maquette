@@ -205,7 +205,7 @@
                                                             <img class="menu-icon" src="img/reclam.png" alt="Auto">
                                                         </span>
                                                             <span style="text-align: end;">
-Réclamations
+                                                                Réclamations
                                                         </span>
                                                         </a>
                                                     </li>
@@ -279,8 +279,6 @@ Réclamations
             </div>
             <!-- mobile-menu-area end -->
         </header>
-        <!-- header end -->
-
         <!-- Start Invest area -->
         <div class="simulation simulation-auto ">
             <div class="container-fluid simulation-container">
@@ -292,40 +290,40 @@ Réclamations
                             <img src="img/calculator.svg" alt="" srcset="">
 
                         </div>
-                        <div> <span>Simuilation Voyage</span></div>
+                        <div> <span>Simulation Voyage</span></div>
 
                     </div>
                 </div>
                 <div class="row stepper">
                     <div class="md-stepper-horizontal yellow">
-                        <div class="md-step active done">
+                        <div class="md-step active done" data-step="1">
                             <div class="md-step-circle"><span>1</span></div>
-                            <div class="md-step-title">Formulaire de calcul</div>
+                            <div class="md-step-title">MON DEVIS</div>
                             <div class="md-step-bar-left"></div>
                             <div class="md-step-bar-right"></div>
                         </div>
-                        <div class="md-step">
+                        <div class="md-step" data-step="2">
                             <div class="md-step-circle"><span>2</span></div>
-                            <div class="md-step-title">Formulaire de souscription</div>
+                            <div class="md-step-title">MA SOUSCRIPTION</div>
 
                             <div class="md-step-bar-left"></div>
                             <div class="md-step-bar-right"></div>
                         </div>
-                        <div class="md-step ">
+                        <div class="md-step " data-step="3">
                             <div class="md-step-circle"><span>3</span></div>
-                            <div class="md-step-title">Paiement</div>
+                            <div class="md-step-title">MA CONFIRMATION </div>
                             <div class="md-step-bar-left"></div>
                             <div class="md-step-bar-right"></div>
                         </div>
-                        <div class="md-step">
+                        <div class="md-step" data-step="4">
                             <div class="md-step-circle"><span>4</span></div>
-                            <div class="md-step-title">Reçu de paiement</div>
+                            <div class="md-step-title">MON PAIEMENT</div>
                             <div class="md-step-bar-left"></div>
                             <div class="md-step-bar-right"></div>
                         </div>
-                        <div class="md-step">
+                        <div class="md-step" data-step="5">
                             <div class="md-step-circle"><span>5</span></div>
-                            <div class="md-step-title">Résumé</div>
+                            <div class="md-step-title">MON COMPTE</div>
                             <div class="md-step-bar-left"></div>
                             <div class="md-step-bar-right"></div>
                         </div>
@@ -334,15 +332,15 @@ Réclamations
 
                 <div class="row from-container calc-form show">
                     <div class="title">
-                        Formulaire de calcul
+                        MON DEVIS
                     </div>
                     <hr class="hr">
 
                     <div class="row container ">
-                        <form>
-                            <div class="form-row row">
-                                <div class="form-group col-md-4 data__field">
-                                    <label for="autoMarque">Civilité* :</label>
+                        <form class="col-md-6">
+                            <div class="form-row row wow bounceInRight">
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoMarque">Civilité<span class="text-danger">*</span> :</label>
                                     <br>
                                     <div id="options" data-toggle="buttons">
                                         <label class="btn btn-default active">
@@ -356,90 +354,229 @@ Réclamations
                                         </label>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-4 data__field">
-                                    <label for="autoModele">Nom* :</label>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Nom<span class="text-danger">*</span> :</label>
                                     <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Frank">
                                 </div>
-                                <div class="form-group col-md-4 data__field">
-                                    <label for="autoModele">Prénoms* :</label>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Prénoms<span class="text-danger">*</span> :</label>
                                     <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Toukpa">
                                 </div>
+
+                                <div class="col-md-12 d-flex questions__nav">
+                                    <input type="button" hidden class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
                             </div>
-                            <div class="form-row row">
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoDMC">Contact 1* :</label>
+
+
+
+                            <div class="form-row row hide">
+                                <div class="form-group col-md-12 ">
+                                    <label for="autoDMC">Contact 1<span class="text-danger">*</span> :</label>
                                     <input type="text" class="form-control form-rounded" id="autoDMC" placeholder="La Rte de Carnival, Bouake, Côte d'Ivoire Latitude">
                                 </div>
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="villeDR">Adresse email* : </label>
+                                <div class="form-group col-md-12 ">
+                                    <label for="villeDR">Adresse email<span class="text-danger">*</span> : </label>
                                     <input type="text" class="form-control form-rounded" id="villeDR" placeholder="username@domain.com">
                                 </div>
-                            </div>
 
-
-
-                            <div class="form-row row">
-
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoModele">Date de naissance* :</label>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Date de naissance (i)<span class="text-danger">*</span>
+                                        :</label>
                                     <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
                                 </div>
 
-                            </div>
-                            <div class="form-row row">
+                                <div class="col-md-12 d-flex questions__nav">
+                                    <input type="button" class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
 
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoMarque">Zone destination*  :</label>
+                                <div class="col-md-12">
+                                    <span style="color: #c3c3c3;"><small>
+                                        (i)	Pourquoi précisez votre date de naissance est importante ?
+                                        <br> 
+La prime à payer dépend de votre âge. En la précisant NSIA Assurances vous proposera l’offre la mieux adaptée à votre situation. Et vous évite ainsi une situation de sous ou sur assurance pouvant être préjudiciable en cas de sinistre.
+
+                                    </small></span>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="form-row row hide">
+
+                                <!-- Zone de destination, pays de destination, jour de départ, jour de retour inclus. -->
+                           
+                                <div class="form-group col-md-6">
+                                    <label for="autoModele">Zone de destination<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Afrique">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <label for="autoModele">Pays de destination<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Tunisie">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="autoModele">Jour de départ<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Afrique">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <label for="autoModele">Jour de retour inclus<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Tunisie">
+                                </div>
+                                <div class="col-md-12 d-flex questions__nav plusassur">
+                                    <input type="button" class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
+                                
+                            </div>
+                       
+                            <div class="form-row row hide">
+
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Souhaitez-vous rajouter d’autres assurés pour le même voyage ?<span
+                                            class="text-danger">*</span>
+                                        :</label>
                                     <br>
-                                    <select class="form-control form-rounded">
-                                        <option>Default select</option>
-                                        <option>Default select</option>
-                                        <option>Default select</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoMarque">Pays de destination* :</label>
-                                    <br>
-                                    <select class="form-control form-rounded">
-                                        <option>Default select</option>
-                                        <option>Default select</option>
-                                        <option>Default select</option>
-                                    </select>
+                                    <div id="options" data-toggle="buttons">
+                                        <label class="btn btn-default active">
+                                            <input type="radio" name="plusassur" id="option1" checked value="1">Oui
+                                        </label>
+                                        <label class="btn btn-default">
+                                            <input type="radio" name="plusassur" id="option2" value="2">Non
+                                        </label>
+
+
+                                    </div>
                                 </div>
 
-                            </div>
-                            <div class="form-row row">
 
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoModele">Jour de départ* :</label>
-                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
-                                </div>
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoModele">Jour de retour inclus* :</label>
-                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
+
+
+
+
+                                <div class="col-md-12 d-flex questions__nav plusassur">
+                                    <input type="button" class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
                                 </div>
 
                             </div>
 
+                            <div class="c4-placeholder hide"></div>
 
+
+                            <div class="form-row row hide">
+
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele"> {firstName}, NSIA Assurances vous propose sa meilleure offre pour répondre à votre besoin.<span
+                                            class="text-danger">*</span>
+                                        :</label>
+                                        <br>
+
+                                        <div class="pricingTable" style="width: 160%;">
+    
+                                            <ul class="pricingTable-firstTable">
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong> Formule 1 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                 
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 2 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                      
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 3 </strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                      
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+                                                <li class="pricingTable-firstTable_table pack">
+                                                    <h1 class="pricingTable-firstTable_table__header">
+                                                        <strong>Formule 4</strong>
+                                                    </h1>
+    
+                                                    <ul class="pricingTable-firstTable_table__options">
+                                                        <li class="included">Pricing</li>
+                                                    
+    
+                                                    </ul>
+                                                    <button class="pricingTable-firstTable_table__getstart"><span
+                                                            class="defualt">Choisir</span><span class="selected"><i
+                                                                class="fa fa-check"
+                                                                aria-hidden="true"></i>Choisi</span></button>
+                                                </li>
+    
+                                            </ul>
+                                        </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="col-md-12 d-flex questions__nav c17">
+                                    <input type="button" class="last" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
+
+                            </div>
+
+                        
 
 
 
 
 
                         </form>
-                        <div class="form-row row">
+                        <div class="form-row row hide">
 
-                            <div class="form-group col-md-12  data__field d-flex">
+                            <div class="form-group col-md-12  data__field d-flex ">
                                 <button id="btnCalc" class="btn-calc">Calculer</button>
                             </div>
 
 
                         </div>
 
-                        <div class="form-row row">
+                        <div class="form-row row hide">
 
-                            <div class="form-group col-md-12 d-flex simulation-result data__field">
+                            <div class="form-group col-md-12 d-flex simulation-result data__field ">
 
 
                                 <div class="loading hide">
@@ -454,9 +591,9 @@ Réclamations
 
                         </div>
 
-                        <div class="form-row row">
+                        <div class="form-row row hide">
 
-                            <div class="form-group col-md-12  data__field d-flex ">
+                            <div class="form-group col-md-12  data__field d-flex">
                                 <button id="btnConf" class="btn-calc">Confirmer</button>
                             </div>
 
@@ -472,40 +609,32 @@ Réclamations
                     <hr class="hr">
 
                     <div class="row container ">
-                        <form>
+                        <form class="col-md-6">
                             <div class="form-row row">
 
-
-                                <div class="form-group col-md-4 data__field">
-                                    <label for="villeDR">N° du passeport : </label>
-                                    <input type="text" class="form-control form-rounded" id="villeDR" placeholder="_ _ _ _ _ _ _ _">
+                                <!-- Cadran 1 : Numéro de passeport, date d’expiration du passeport, date de RDV à l’ambassade -->
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="villeDR">Numéro de passeport : </label>
+                                    <input type="number" class="form-control form-rounded" id="villeDR" placeholder="_ _ _ _ _ _ _ _">
                                 </div>
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoModele">Date d’expiration du passeport* :</label>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Date d’expiration du passeport<span
+                                            class="text-danger">*</span> :</label>
                                     <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
                                 </div>
-                                <div class="form-group col-md-6 data__field">
-                                    <label for="autoModele">Date de RDV à l’ambassade* :</label>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Date de RDV à l’ambassade<span
+                                            class="text-danger">*</span> :</label>
                                     <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
                                 </div>
-
-                            </div>
-
-
-
-
-                            <div class="form-row row">
-
-                                <div class="form-group col-md-12  data__field d-flex">
-                                    <button id="btnConfSubs" class="btn-calc">Confirmer</button>
+                        
+                                <div class="col-md-12 d-flex questions__nav last-subs">
+                                    <input type="button" class="last first-back" value="Retour">
+                                    <input type="button" class="next" value="Suivant">
                                 </div>
 
 
                             </div>
-
-
-
-
 
                     </div>
 
@@ -525,10 +654,11 @@ Réclamations
 
 
 
-                            <div class="form-row row">
+                            <div class="form-row row on">
 
                                 <div class="form-group col-md-4 data__field">
-                                    <label for="autoMarque">Method de paiement* :</label>
+                                    <label for="autoMarque">Method de paiement<span class="text-danger">*</span>
+                                        :</label>
                                     <br>
                                     <div id="options" data-toggle="buttons">
                                         <label class="btn btn-default active">
@@ -541,18 +671,15 @@ Réclamations
 
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <div class="form-row row">
-
-                                <div class="form-group col-md-12  data__field d-flex  data__field ">
-                                    <a id="btnConfPay" class="btn-calc">Confirmer</a>
+                                <div class="col-md-12 d-flex questions__nav">
+                                    <input type="button" class="last first-back" value="Retour">
+                                    <input type="button" class="next " value="Suivant">
                                 </div>
 
-
                             </div>
 
+
+                        </form>
 
 
 
@@ -560,15 +687,16 @@ Réclamations
                     </div>
 
                 </div>
+
                 <div class="row from-container recipit-form">
                     <div class="title">
                         Reçu de paiement
                     </div>
                     <hr class="hr">
 
-                    <div class="row container ">
+                    <div class="row container">
                         <form>
-                            <div class="form-row row">
+                            <div class="form-row row on">
                                 <table cellspacing="0" cellpadding="0" width="100%" style="max-width:600px;margin: auto;">
                                     <tbody>
                                         <tr>
@@ -603,7 +731,7 @@ Réclamations
                                                                                                                     </div>
                                                                                                                     <h3 style="font-weight:900;font-size:24px;line-height:32px;margin-bottom:12px;text-align:center;color:#45567c;font-family:Lato,Helvetica,Roboto,sans-serif">
                                                                                                                         Reçu de paiement pour
-                                                                                                                        <span class="il">NISA</span> Assurance
+                                                                                                                        <span class="il">NSIA</span> Assurance
                                                                                                                     </h3>
 
                                                                                                                     <table cellspacing="0" cellpadding="0" width="100%" style="font-family:'Lato','Helvetica','Roboto',sans-serif">
@@ -742,8 +870,10 @@ Réclamations
 
                                                                                                                                                         </div>
                                                                                                                                                         <a width="216px" class="m_1944771341325159121XianW" style="background-color:#0096ff;border:2px solid none;border-radius:4px;color:#ffffff;display:inline-block;font-size:16px;font-weight:900;line-height:44px;padding-top:0;padding-right:0;padding-left:0;padding-bottom:0;text-align:center;text-decoration:none;width:216px;font-family:'Lato','Helvetica','Roboto',sans-serif"
-                                                                                                                                                            target="_blank"> <span>                                                                                                                                                           <span
-                                                                                                                                                                style="color:#ffffff">Imprimer</span></a>
+                                                                                                                                                            target="_blank">
+                                                                                                                                                            <span>
+                                                                                                                                                                <span
+                                                                                                                                                                    style="color:#ffffff">Imprimer</span></a>
                                                                                                                                                     </div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -780,23 +910,10 @@ Réclamations
                                     </tbody>
                                 </table>
                             </div>
-
-                            <div class="form-row row">
-
-                                <div class="form-group col-md-12  data__field d-flex hide">
-                                    <button id="btnConfRecipit" class="btn-calc">Confirmer</button>
-                                </div>
-
-
-                            </div>
-
-
-
-
-
                     </div>
 
                 </div>
+
 
 
             </div>
@@ -806,7 +923,6 @@ Réclamations
         <!-- Start Footer Area -->
 
         <!-- Start Footer Area -->
-
         <footer class="footer1">
             <!-- NEWSLETTER -->
             <div class="row spe-row wow slideInRight">
@@ -966,12 +1082,12 @@ Réclamations
                 </div>
             </div>
         </footer>
-
         <!-- End Footer area -->
 
         <!-- End Footer area -->
         <!-- start-quiz -->
     </div>
+
 
 
     <div class="amg-floating-contacts">
@@ -993,10 +1109,10 @@ Réclamations
         </div>
         <div class="amg-floating-contact-wrap amg-adress">
             <div class="amg-floating-icon">
-                <img src="img/reclam1.png" style="width: 35px">
+                <i class="glyphicon fa fa-map-marker"></i>
             </div>
             <div class="amg-floating-link amg-floating-phone">
-                <a class="amg-nav-item" href="reclamations.html"> Réclamations</a>
+                <a class="amg-nav-item" href="agency-location.html"> Localiser une agence</a>
             </div>
         </div>
 
@@ -1051,15 +1167,11 @@ Réclamations
     <script src="js/plugins.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
-
-
-    <script src="js/floating.js">
-    </script>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.3/rangeslider.min.css" integrity="sha512-Rp0yZ3NMh1xOUZ4VHYggmX4pq4ZJdpcOETH03qBD5qNDsqTBw1MzUnX0T5PcTJmr2mNTOmtbxsHaGwzjylNpHA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
+    <script src="js/floating.js">
+    </script>
     <script>
         var rangeSlider = document.getElementById("rs-range-line");
         var rangeBullet = document.getElementById("rs-bullet");
@@ -1075,8 +1187,11 @@ Réclamations
         }
 
         $('#btnConf').click(() => {
-            // showNext()
 
+            console.log("sqdqs")
+                // showNext()
+
+            $(".loading.hide").removeClass("hide")
             currentStep = $(".md-step.active.done")
             nextStep = currentStep.next()
             nextStep.addClass("active")
@@ -1117,14 +1232,11 @@ Réclamations
             currentForm = $(".from-container.show").removeClass("show")
             currentForm.next().addClass("show")
 
-
-
-
-
         })
         $('#btnCalc').click(() => {
-            $(".loading.hide").removeClass("hide")
+
             showNext()
+            $(".loading.hide").removeClass("hide")
             setTimeout(() => {
                 price = currentStep = $(".simulation .simulation-result .loading").removeClass("loading")
                 price.addClass("result")
@@ -1137,9 +1249,187 @@ Réclamations
 
 
         })
+        $(document).on("click", ".addOthers", function() {
+
+
+            areaB = $(".persons.form-row").last()
+            areaB.after(`
+            
+            <div class="persons main_pers form-row row on" style="padding: 0px 15px;">
+            <fieldset style="padding: 0px 15px;" class="row">
+                                        <legend>Assuré   <span class="assrs" data-value='${$(".persons fieldset").length}'>${$(".persons fieldset").length + 2} </span> </legend>
+                                
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Nom<span class="text-danger">*</span> :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Frank">
+                                </div>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Prénoms<span class="text-danger">*</span> :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Toukpa">
+                                </div>
+
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Date de naissance (i)<span class="text-danger">*</span>
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="autoModele">Jour de départ<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Afrique">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <label for="autoModele">Jour de retour inclus<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Tunisie">
+                                </div>
+
+                                
+                                    </fieldset>
+                                    <input type="button" class="addOthers" value="Ajoutez un autre assuré">
+                                    <div class="col-md-12 d-flex questions__nav">
+                                    <input type="button" id="fff" class="last"  value="Retour">
+                                    <input type="button" class="next" value="Suivant">
+                                </div>
+                            </div>
+                        
+
+                            `)
+            $(".persons").last().prev().addClass('hide');
+        })
         $('input').change(function() {
 
             showNext()
+
+        });
+        $('input[name="plusassur"]').change(function() {
+
+
+            // console.log("aaaa", this.value, $(this).parent().parent().parent().parent())
+            $(".row.c17")?.remove()
+            $(".c4-placeholder")?.remove()
+            $(".row.form-row.persons")?.remove()
+
+
+
+            setTimeout(() => {
+
+
+                if (this.value == 1) {
+                    $(this).parent().parent().parent().parent().after(`
+<div class="persons main_pers form-row row hide" style="padding: 0px 15px;">
+
+<fieldset style="padding: 0px 15px;" class="row">
+    <legend>Assuré 2 </legend>
+    <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Nom<span class="text-danger">*</span> :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Frank">
+                                </div>
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Prénoms<span class="text-danger">*</span> :</label>
+                                    <input type="text" class="form-control form-rounded" id="autoModele" placeholder="Toukpa">
+                                </div>
+
+                                <div class="form-group col-md-12 data__field">
+                                    <label for="autoModele">Date de naissance (i)<span class="text-danger">*</span>
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Frank">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="autoModele">Jour de départ<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Afrique">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <label for="autoModele">Jour de retour inclus<span class="text-danger">*</span> 
+                                        :</label>
+                                    <input type="date" class="form-control form-rounded" id="autoModele" placeholder="Tunisie">
+                                </div>
+
+    
+
+</fieldset>
+
+<input type="button" class="addOthers" value="Ajoutez un autre assuré">
+
+<div class="col-md-12 d-flex questions__nav main_pers">
+    <input type="button" class="last" value="Retour">
+    <input type="button" class="next" value="Suivant">
+</div>
+</div>
+<div class="form-row row c17 hide">
+
+<div class="form-group col-md-12 data__field">
+    <label for="autoModele">Quand souhaitez-vous êtes assuré ? <span
+            class="text-danger">*</span>
+        :</label>
+    <br>
+    <div id="options" data-toggle="buttons">
+        <label class="btn btn-default active">
+            <input type="radio" name="option" id="option1" value="1">Au plus vite
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="option" id="option2" value="2">dans 1 mois
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="option" id="option2" value="2">dans 3 mois et +
+        </label>
+
+
+    </div>
+</div>
+
+
+
+
+
+<div class="col-md-12 d-flex questions__nav ">
+    <input type="button" class="last" value="Retour">
+    <input type="button" class="next" value="Suivant">
+</div>
+
+</div>
+`)
+
+                } else {
+
+                    $(this).parent().parent().parent().parent().after(`<div class="form-row row c17 hide">
+
+<div class="form-group col-md-12 data__field">
+    <label for="autoModele">Quand souhaitez-vous êtes assuré ? <span
+            class="text-danger">*</span>
+        :</label>
+    <br>
+    <div id="options" data-toggle="buttons">
+        <label class="btn btn-default active">
+            <input type="radio" name="option" id="option1" value="1">Au plus vite
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="option" id="option2" value="2">dans 1 mois
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="option" id="option2" value="2">dans 3 mois et +
+        </label>
+
+
+    </div>
+</div>
+
+
+
+
+
+<div class="col-md-12 d-flex questions__nav">
+    <input type="button" class="last" value="Retour">
+    <input type="button" class="next" value="Suivant">
+</div>
+
+</div>`)
+
+                }
+
+
+            }, 50)
 
         });
 
@@ -1169,6 +1459,96 @@ Réclamations
             $(this).addClass("selected");
 
 
+
+        });
+
+        // $('.next').on('click', function (e) {
+        //     // alert('sdef')
+        //     $(this).parent().parent().removeClass('on');
+
+        //     $(this).parent().parent().next().addClass('on');
+
+        //     // showVictimBtn($(this).parent().next());
+        // });
+
+        $(document).on('click', '.next', function() {
+            //do something
+
+            console.log($(this).parent().hasClass('plusassur'), $('input[name="plusassur"]:checked').val());
+            // const assrs = $(".assrs").last().attr("data-value")
+            // if (((assrs == ($(".persons fieldset").length - 1)) || $('input[name="plusassur"]:checked').val() == 2) && ($(this).parents('.calc-form').length > 0)) {
+            //     // currentStep = $(".md-step.active.done")
+            //     // nextStep = currentStep.next()
+            //     // nextStep.addClass("active")
+            //     // nextStep.addClass("done")
+
+            //     // currentForm = $(".from-container.show").removeClass("show")
+            //     // currentForm.next().addClass("show")
+            // }
+
+            // if ($(this).parent().hasClass('plusassur')) {
+            //     const val = $('input[name="plusassur"]:checked').val();
+            //     if (val === '1') {
+
+            //         $(this).parent().parent().addClass('hide');
+            //         $(this).parent().parent().next().removeClass('hide');
+
+            //     } else {
+
+            //         $(this).parent().parent().addClass('hide');
+            //         $(this).parent().parent().next().next().removeClass('hide');
+
+            //     }
+
+            // } else
+            if ($(this).parents('.last-subs').length > 0 || $(this).parent().hasClass('c17')) {
+                currentStep = $(".md-step.active.done")
+                nextStep = currentStep.next()
+                nextStep.addClass("active")
+                nextStep.addClass("done")
+
+                currentForm = $(".from-container.show").removeClass("show")
+                currentForm.next().addClass("show")
+
+            } else if ($(this).parents('.pay-form').length > 0) {
+                currentStep = $(".md-step.active.done")
+                nextStep = currentStep.next()
+                nextStep.addClass("active")
+                nextStep.addClass("done")
+                currentForm = $(".from-container.show").removeClass("show")
+                currentForm.next().addClass("show")
+
+
+            } else {
+                $(this).parent().parent().addClass('hide');
+                $(this).parent().parent().next().removeClass('hide');
+            }
+
+
+        });
+        $(document).on('click', '.last', function() {
+            //do something
+
+            console.log("dd", $(this).hasClass('first-back'))
+            if ($(this).hasClass('first-back')) {
+                currentStep = $(".md-step.active.done").last()
+                nextStep = currentStep.prev()
+                currentStep.removeClass("active")
+                currentStep.removeClass("done")
+                currentForm = $(".from-container.show").removeClass("show")
+                currentForm.prev().addClass("show")
+
+
+
+            } else {
+
+                $(this).parent().parent().addClass('hide');
+                $(this).parent().parent().prev().removeClass('hide');
+
+            }
+
+            // $(this).parent().parent().addClass('hide');
+            //     $(this).parent().parent().prev().removeClass('hide');
 
         });
     </script>
