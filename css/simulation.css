@@ -301,9 +301,7 @@
 
 .pricingTable-firstTable {
     list-style: none;
-    padding-left: 2em;
-    padding-right: 2em;
-    text-align: center;
+    
 }
 
 .pricingTable-firstTable_table {
@@ -316,6 +314,7 @@
     max-width: 320px;
     transition: all 0.3s ease;
     border-radius: 5px;
+    transform: scale(1);
 }
 
 @media screen and (max-width: 767px) {
@@ -382,8 +381,9 @@
     }
 }
 
-.pricingTable-firstTable_table:nth-of-type(2):before {
-    /* content: 'Plus Populair';
+.pricingTable-firstTable_table.popular:before {
+    
+    content: 'Recommandée';
     position: absolute;
     color: white;
     display: block;
@@ -391,15 +391,17 @@
     text-align: center;
     right: 15px;
     top: -25px;
-    height: 65px;
-    width: 65px;
+    height: 64px;
+    width: 84px;
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 0.5em;
     padding-top: 22px;
     text-transform: uppercase;
     letter-spacing: 0.13em;
-    transition: all 0.5s ease; */
+    transition: all 0.5s ease;
+    
+   
 }
 
 @media screen and (max-width: 988px) {
@@ -529,6 +531,13 @@
         font-size: 0.25em;
     }
 }
+.pricingTable-firstTable_table.pack .pricingTable-firstTable_table__options.sh{
+    display: none!important;
+}
+.pricingTable-firstTable_table.pack:hover .pricingTable-firstTable_table__options.sh{
+    display: block!important;
+}
+
 
 .pricingTable-firstTable_table__options {
     list-style: none;
@@ -589,7 +598,7 @@
 }
 
 .pricingTable-firstTable_table__options>li.included:before {
-    content: '✓';
+    content: '\002713';
     display: inline-flex;
     margin-right: 15px;
     color: white;
@@ -1124,6 +1133,6 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 }
 
 .simulation .simulation-hero.reclamation {
-    background: url(/img/reclamation.jpg);
+    background: url(../img/reclamation.jpg);
     background-position: 100% 60%;
 }
