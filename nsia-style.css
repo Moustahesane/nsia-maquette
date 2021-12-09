@@ -487,7 +487,7 @@ element.style {
 }
 
 .fun_text:hover {
-    cursor: pointer;
+    
     background: #00355d;
 }
 
@@ -987,7 +987,6 @@ i {
 }
 
 .fun_text:hover {
-    cursor: pointer;
     background: #2D2D94;
 }
 
