@@ -557,6 +557,10 @@ span.counter-icon {
     padding-top: 5px;
 }
 
+.mlMinus50 {
+    margin-left: -50px!important;
+}
+
 .color-goldSize {
     color: #d4a44a;
     font-size: 1.55rem;
