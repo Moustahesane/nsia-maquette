@@ -382,26 +382,27 @@
 }
 
 .pricingTable-firstTable_table.popular:before {
-    
     content: 'Recommandée';
     position: absolute;
     color: white;
     display: block;
     background-color: #3bbdee;
     text-align: center;
-    right: 15px;
+    right: 0;
     top: -25px;
-    height: 64px;
-    width: 84px;
-    border-radius: 50%;
+    left: 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
     box-sizing: border-box;
     font-size: 0.5em;
-    padding-top: 22px;
     text-transform: uppercase;
     letter-spacing: 0.13em;
     transition: all 0.5s ease;
-    
-   
+    box-shadow: rgb(59 189 238) 0px 0px 5px 0px, rgb(0 0 0 / 10%) 0px 0px 1px 0px;
+}
+.pricingTable-firstTable_table.popular {
+    box-shadow: rgb(59 189 238) 0px 0px 5px 0px, rgb(0 0 0 / 10%) 0px 0px 1px 0px;
+    border-radius: 0 0 5px;
 }
 
 @media screen and (max-width: 988px) {
