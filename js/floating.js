@@ -13,18 +13,18 @@
     });
 
     // Demo
-    var interval = setInterval(function() {
-        $(".amg-floating-icon").trigger("mouseenter");
+    // var interval = setInterval(function() {
+    //     $(".amg-floating-icon").trigger("mouseenter");
 
-        setTimeout(function() {
-            $(".amg-floating-icon").trigger("mouseleave");
-        }, 1000);
-    }, 2000);
+    //     setTimeout(function() {
+    //         $(".amg-floating-icon").trigger("mouseleave");
+    //     }, 1000);
+    // }, 2000);
 
-    setTimeout(function() {
-        // stop demo
-        clearInterval(interval);
-    }, 2000);
+    // setTimeout(function() {
+    //     // stop demo
+    //     clearInterval(interval);
+    // }, 2000);
 
 
 })(jQuery);
