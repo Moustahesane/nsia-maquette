@@ -3,7 +3,7 @@
 }
 
 .simulation .simulation-hero.declaration {
-    background: url(/img/declaration.jpg);
+    background: url(../img/declaration.jpg);
     background-position: 100% 60%;
 }
 
